@@ -1,0 +1,622 @@
+* {
+    /* zerando as configs da folha */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.headIndex {
+    background-image: url('../img/NikeAJ1.png');
+    background-size: cover;
+    /* cover - sempre vai se adaptar ao tamanho de tela */
+    background-position: center;
+    min-height: 480px
+        /* tamanho minimo da imagem independente do dispositivo */
+    ;
+    padding: 30px;
+}
+
+.container {
+    /* posição do banner */
+    max-width: 1400px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.logo {
+    position: relative;
+    background-image: url('../img/LogoFinal.png');
+    background-size: 100% 100%;
+    /* pega o tamanho 100% da imagem nos dois eixos independente do tamanho do box */
+    width: 77px;
+    /* determinando o tamanho do box */
+    height: 67px;
+    float: left;
+    /* flutua a box para a esquerda */
+    bottom: 19px;
+}
+
+nav.desktop {
+
+    float: right;
+    /* flutua a box para a direita */
+}
+
+nav.desktop ul {
+    /* itens do menu superior */
+    list-style-type: none;
+    /* tira a decoração da lista */
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+nav.desktop li {
+    /* pai dos itens do menu superior */
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+nav.desktop a {
+    /* formatação dos botões na barra de navegação */
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+nav li.btn-orcamento {
+    /* botao na nav para orçamentoi */
+
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 2px solid #a9afcc;
+
+}
+
+div.chamada-mkt form {
+    /* Espaço para inserção do email */
+
+    padding: 15px;
+    position: relative;
+    left: -16px;
+}
+
+div.chamada-mkt {
+    /* div do cadastro no site */
+
+    padding: 14px 17px 40px 17px;
+    background-color: #2b243e4d;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 71%;
+    bottom: 42%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #808cb1a3;
+    box-shadow: 0px 0px 15px 7px #98a3c491;
+}
+
+div.chamada-mkt h2 {
+    /* titulo do cadastro no site */
+
+    font-size: 23px;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+div.chamada-mkt p {
+    /* sub-texto na div do cadastro no site */
+    font-size: 20px;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+div.chamada-mkt input[type=email] {
+    /* entre"[]" para atribuição de valor, usado no input por conta dos tipos de input */
+
+    width: 190px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: azure;
+    color: red;
+    /* Cor do texto no campo de email*/
+
+    padding-left: 13px;
+    /* espaçamento do placeholder */
+
+}
+
+div.chamada-mkt input[type=submit] {
+    /* botão de cadastrar */
+    background-color: #98a3c4;
+    border-radius: 80px;
+    width: 80px;
+    height: 25px;
+    font-weight: bold;
+    color: #2b243e;
+    cursor: pointer;
+    border: 0px;
+    position: absolute;
+    left: 18px;
+    bottom: -18px;
+}
+
+div.chamada-mkt input[type=email]:focus {
+    /* remove a borda do campo do email quando clicado */
+
+    outline: 0;
+}
+
+.sessao-01 {
+    /* dimenções da 1º sessão */
+
+    background-size: cover;
+    background-position-y: 46%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+
+}
+
+.desc-produto {
+    /* dimenção da descrição do produto na 1º sessão */
+
+    padding: 0 15px;
+    float: left;
+    width: 50%;
+    margin: 53px;
+}
+
+.sessao-01 img {
+    /* confuguração da dimenção da imagem apresentada */
+
+    width: 40%;
+    float: left;
+    max-width: 300px;
+    position: relative;
+    top: 45px;
+    color: white;
+}
+
+.clear {
+    /* impede que elementos flutuem qebrando o cod. */
+
+    clear: both;
+
+}
+
+.desc-produto h3 {
+    /* Titulo da descrição do produto sa 2º sessão */
+
+    color: aliceblue;
+    font-size: 23px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.desc-produto p {
+    /* texto na descrição do produto na 2º sessão */
+    margin-top: 15px;
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+::-webkit-scrollbar {
+    /* largura da barra de rolagem */
+
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    /* cor de fundo e raio da faixa */
+
+    border-radius: 35px;
+    background-color: #E7E7E7;
+}
+
+::-webkit-scrollbar-thumb {
+    /* cor e raio do "polegar" da barra */
+
+    border-radius: 35px;
+    background-color: #B3B3B3;
+}
+
+.sessao-02>.container {
+    /* foto do produto na segunda sessão */
+
+    background-image: url('../img/YeezySlide.png');
+    background-size: cover;
+    position: relative;
+    max-width: 800px;
+    min-height: 350px;
+}
+
+.feedback {
+    /* div da sessão de descrição do produto */
+
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.623);
+    top: 180px;
+    max-width: 500px;
+    min-height: 200px;
+    left: 260px;
+    box-shadow: 0 9px 20px 0 rgba(17, 17, 17, 0.943);
+
+}
+
+.feedback p {
+    /* descrição do produto na segunda sessão */
+
+    color: #ded5b6;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 15px;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+.sessao-03 {
+    /* início da sessão de produtos */
+
+    padding: 15px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.sessao-03 div {
+    /* divisorias do produtos */
+
+    border-radius: 20px;
+    width: 21%;
+    display: inline-block;
+    position: relative;
+    background-color: #E7E7E7;
+    margin: 14px;
+    height: 274px;
+}
+
+.sessao-03 .produto1 {
+    /* foto do 1º produto */
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: start;
+    padding-left: 10px;
+
+}
+
+.sessao-03 .produto1 h4 {
+    /* preço total do 1º produto */
+
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #626262;
+    top: 39%;
+    padding: 10px 0 10px 0;
+
+}
+
+.sessao-03 .produto1 h2 {
+    /* preço em parcelas do 1º produto */
+
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #626262;
+    top: 76%;
+
+}
+
+.sessao-03 .produto1 p {
+    /* Nome do 1º produto */
+
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #626262;
+    top: 88%;
+
+}
+
+.sessao-03 .produto1 img {
+    /* Foto do 2º produto */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+
+}
+
+
+.preco {
+    /* Negrito nos preços dos produtos */
+
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+.verMais {
+
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #B3B3B3;
+    position: absolute;
+    padding: 0px 4px 0px 4px;
+    border-radius: 10px;
+    top: 175px;
+    border: solid 1px #a9afcc;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-top: 7px;
+
+}
+
+.sessao-04 {
+    /* sessão das logo de marcas existentes no site */
+    background: black;
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sessao-04 div {
+    /* divisoria das logos no fim da barra de rolagem */
+
+    width: 160px;
+    height: 45px;
+    background-color: #000000;
+    display: inline-block;
+
+}
+
+.sessao-04 .marcas1 {
+    /* 1º logo de marcas no fim da barra de rolagem. */
+    background-image: url("../img/AdidasLogo.png");
+    background-size: cover;
+}
+
+.sessao-04 .marcas2 {
+    /* 2º logo de marcas no fim da barra de rolagem. */
+    background-image: url("../img/MizunoLogo.png");
+    background-size: cover;
+}
+
+.sessao-04 .marcas3 {
+    /* 3º logo de marcas no fim da barra de rolagem. */
+    background-image: url("../img/NbLogo.png");
+    background-size: cover;
+}
+
+.sessao-04 .marcas4 {
+    /* 4º logo de marcas no fim da barra de rolagem. */
+    background-image: url("../img/NikeLogo.png");
+    background-size: cover;
+}
+
+footer {
+    /* configurações da caixa do footer */
+    padding-top: 10px;
+    margin-top: 50px;
+    width: 100%;
+    height: 170px;
+    background-image: url(../img/aj1Geral.webp);
+    background-size: 159%;
+    background-position-x: -239px;
+}
+
+footer .contato {
+    /* alinhamento do conteudo footer */
+    text-align: center;
+    color: #2b243e;
+
+}
+
+footer .contatoB {
+    /* Texto em negrito do footer */
+    font-weight: bold;
+    display: inline;
+    color: #ffffffee;
+    padding: 0px 5px;
+    border-radius: 20px;
+    background-color: #98a3c463;
+    box-shadow: 0px 0px 5px 5px #98a3c463;
+}
+
+
+html {
+    /* Comportamento da target do clique */
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
+/* ---------------------------------- Abaixo versão mobile-------------------------------------- */
+
+nav.mobile {
+    /* navegação mobile */
+
+    display: none;
+    float: right;
+
+}
+
+nav.mobile i {
+
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+nav.mobile li.btn-orcamento {
+
+    padding: 4px 10px;
+    display: inline-block;
+
+}
+
+nav.mobile ul {
+
+    position: absolute;
+    width: 100%;
+    background-color: #98a3c4;
+    left: 0;
+    text-align: center;
+    display: none;
+    padding: 50px 0 30px 0;
+    top: 0;
+
+}
+
+nav.mobile a {
+
+    text-decoration: none;
+    color: white;
+}
+div.chamada-mktM{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    display: none ;
+    top: 60px;
+    
+}
+div.chamada-mktM input[type=email]{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0 30px 0 30px;
+    border: solid 2px #a9afcc;
+
+}
+div.chamada-mktM input[type=submit]{
+   font-size: 20px; 
+   padding: 0 30px 0 30px;
+   border-radius: 20px;
+   background-color: #a9afcc;
+}
+
+div.chamada-mktM h2{
+    font-size: 50px;
+}
+div.chamada-mktM p{
+    font-size: 50px;
+}
+
+.sessao-03 .content-prod{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    /* oculta elementos dentro da chave quando a resolução fica abaixo de 1024px */
+
+    div.chamada-mkt{
+        display: none;
+        
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    div.chamada-mktM{
+
+        display: inline;
+    }
+    .desc-produto{
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.sessao-01 img{
+        float: none;
+        
+    }
+
+    .sessao-02 .feedback{
+        top: 50px;
+        left: 0;
+        margin: 0 auto;
+        position: relative;
+        
+    }
+
+    .sessao-03{
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .sessao-03 div{
+        display: block;
+        width: 50%;
+       
+        margin-bottom: 3%;
+        position: relative;
+        height: 470px;
+        
+    }
+    .produto1{
+
+        margin: 0 auto;
+        position: fixed;
+
+
+    }
+    .produto1 h2{
+        font-size: 30px;
+        margin: 0;
+        margin-top: -25px;
+
+    }
+    .produto1 h4{
+        font-size: 35px;
+        margin: 0;
+        margin-top: 60px;
+
+
+    }
+    .produto1 p{
+        font-size: 20px;
+        margin: 0;
+        margin-top: -41px;
+
+    }
+    .produto1 input{
+        margin-top: 234px;
+        width: 200px;
+        height: 47px;
+        font-size: 20px;
+        
+    }
+    .sessao-04{
+        display: block;
+    }
+    .sessao-04 .marcas1{
+        width: 40%;
+    }
+}
